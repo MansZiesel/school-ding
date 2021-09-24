@@ -16,7 +16,6 @@ html {
 body {
     margin: 0;
     overflow: hidden;
-    background-color: var(--background);
 
 }
 
@@ -43,6 +42,7 @@ li {
 
 .main {
     column-count: 3;
+    column-gap: 100px;
     z-index: 3;
     position: fixed;
     transform: translate(-50%, -50%);
@@ -51,8 +51,11 @@ li {
     padding: 50px;
     color: var(--text);
     font-size: 24px;
-    width: 60%;
+    width: 70%;
     text-align: center;
+    -webkit-column-width: 150px;
+    -moz-column-width: 150px;
+    column-width: 150px;
 }
 
 ul {
