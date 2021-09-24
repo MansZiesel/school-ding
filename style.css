@@ -17,6 +17,7 @@ body {
     height: fit-content;
     color: white;
     z-index: 1;
+    backdrop-filter: blur(2px);
 }
 
 .logo {
@@ -32,13 +33,19 @@ body {
 
 .main {
     column-count: 3;
-    background-color: red;
+    /* background-color: red; */
     z-index: 3;
     position: fixed;
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
+    padding: 50px;
+    color: snow;
+    font-size: 24px;
+    width: 60%;
+
     
+
 }
 
 .scene {

@@ -1,6 +1,6 @@
 // Displacement Sphere
-// by Cody Bennett
-// https://codyb.co
+// by Mans Ziesel
+// https://mziesel.com
 
 // Setup
 
