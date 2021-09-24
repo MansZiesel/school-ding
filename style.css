@@ -99,11 +99,6 @@ ul {
     text-decoration: underline;
     border-radius: 24px;
   }
-
-
-  html {
-    height:100%;
-  }
   
   body {
     margin:0;
@@ -130,7 +125,19 @@ ul {
     animation-duration:5s;
   }
   
-  
+  .link {
+    text-decoration: underline;
+    color: black;    
+  }
+
+  img {
+    box-shadow: 6px 6px 3px 1px #111
+  }
+
+  img:hover {
+    
+  }
+
   @keyframes slide {
     0% {
       transform:translateX(-25%);
@@ -139,5 +146,6 @@ ul {
       transform:translateX(25%);
     }
   }
+
 
   
