@@ -22,13 +22,18 @@ body {
 
 .logo {
     color: cyan;
-    padding: 5px;
-    padding-left: 20px;
+
 
 }
 
+li {
+    float: left;
+  }
+
 .nav_a {
     padding: 0 100 100 0;
+    display: inline-block;
+
 }
 
 .main {
@@ -43,6 +48,7 @@ body {
     color: snow;
     font-size: 24px;
     width: 60%;
+    text-align: center;
 
     
 
@@ -51,3 +57,30 @@ body {
 .scene {
     z-index: -1;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+    
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    
+  }
+  
+  li a:hover {
+    background-color: #111;
+    text-decoration: underline;
+  }
