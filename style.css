@@ -1,23 +1,13 @@
-::selection {
-  background-color: cyan;
-  color: black;
-}
-
-
 :root {
-  --background: #fff;
-  --text: #fff;
-  --accent: #00E5FF;
+  --background: rgba(255, 255, 255, 0.63);
+  --text: #000;
+  --accent: #fff;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: #F2F2F2;
-    --text: #000;
-    --accent: #00E5FF; 
-  }
+::selection {
+  background-color: #1FC0FF;
+  color: var(--accent);
 }
-
 
 html {
     font-family: Arial, Helvetica, sans-serif;
@@ -40,27 +30,19 @@ body {
     color: var(--text);
     z-index: 1;
     backdrop-filter: blur(2px);
+    padding: 20px;
 }
 
 .current {
     color: var(--accent);
-
-
 }
 
 li {
     float: left;
-  }
-
-.nav_a {
-    padding: 0 100 100 0;
-    display: inline-block;
-
 }
 
 .main {
     column-count: 3;
-    /* background-color: red; */
     z-index: 3;
     position: fixed;
     transform: translate(-50%, -50%);
@@ -71,13 +53,6 @@ li {
     font-size: 24px;
     width: 60%;
     text-align: center;
-
-    
-
-}
-
-.scene {
-    z-index: -1;
 }
 
 ul {
@@ -98,10 +73,54 @@ ul {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 24px;
+    transition: all .4s ease;
     
   }
   
   li a:hover {
     background-color: var(--background);
     text-decoration: underline;
+    border-radius: 24px;
   }
+
+
+  html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(255, 255, 255) 50%, rgb(0, 183, 255) 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+  
