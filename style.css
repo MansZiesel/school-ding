@@ -28,13 +28,15 @@ body {
 /* navbar */
 
 .nav {
+  /* opacity: 0.5; */
   position: fixed;
   display: block;
   left: 0;
   right: 0;
   top: 0;
   height: fit-content;
-  background-color: var(--accent2);
+  background-color: rgba(31, 192, 255, 0.5);
+  /* var(--accent2); */
   z-index: 1;
   backdrop-filter: blur(2px);
   padding: 20px;
@@ -42,10 +44,6 @@ body {
 
 .current {
   color: var(--accent);
-}
-
-.current:hover {
-  color: var(--accent2);
 }
 
 li {
@@ -69,7 +67,6 @@ li a {
 }
 
 li a:hover {
-  background-color: var(--background);
   text-decoration: underline;
   border-radius: 24px;
 }
@@ -83,7 +80,6 @@ li a:hover {
   padding: 100px;
 }
 
-
 .table {
   color: var(--text);
   font-size: 24px;
@@ -94,6 +90,7 @@ li a:hover {
 
 .col3 {
   column-count: 3;
+  /* column-fill: auto; */
 }
 
 .col2 {
@@ -132,6 +129,10 @@ li a:hover {
 .link {
   text-decoration: underline;
   color: black;
+}
+
+.img1 {
+  width: 20vw;
 }
 
 /* begin grid */
@@ -198,5 +199,4 @@ th {
 
 main {
   margin: 150px;
-
 }
