@@ -88,17 +88,9 @@ li a:hover {
 
 /* columns */
 
-.col3 {
+.cols {
   column-count: 3;
   /* column-fill: auto; */
-}
-
-.col2 {
-  column-count: 2;
-}
-
-.col1 {
-  column-count: 1;
 }
 
 /* background */
@@ -128,14 +120,65 @@ li a:hover {
 
 .link {
   text-decoration: underline;
-  color: black;
+  color: var(--text);
 }
 
-.img1 {
+/* images */
+
+.home img {
   width: 20vw;
 }
 
-/* begin grid */
+/* Form */
+.contact form {
+  max-width: 420px;
+  margin: 50px auto;
+  margin-top: 200px;
+  padding: 20px;
+}
+
+.contact .input {
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #000;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.contact textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.contact [type="submit"] {
+  width: 100%;
+  background: #000;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+}
+
+.contact [type="submit"]:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* background animations */
 
 @keyframes slide {
   0% {
@@ -201,52 +244,3 @@ main {
   margin: 150px;
 }
 
-.contact form {
-  max-width: 420px;
-  margin: 50px auto;
-  margin-top: 200px;
-  padding: 20px;
-}
-
-.contact .input {
-  color: #000;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  border-radius: 5px;
-  line-height: 22px;
-  background-color: transparent;
-  border: 2px solid #000;
-  transition: all 0.3s;
-  padding: 13px;
-  margin-bottom: 15px;
-  width: 100%;
-  box-sizing: border-box;
-  outline: 0;
-}
-
-.contact textarea {
-  height: 150px;
-  line-height: 150%;
-  resize: vertical;
-}
-
-.contact [type="submit"] {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  width: 100%;
-  background: #000;
-  border-radius: 5px;
-  border: 0;
-  cursor: pointer;
-  color: #fff;
-  font-size: 24px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transition: all 0.3s;
-  margin-top: -4px;
-}
-
-.contact [type="submit"]:hover {
-  background: #fff;
-  color: #000;
-}
