@@ -8,7 +8,7 @@
   --accent3: #fff;
 }
 
-/* selection */
+/* text selection */
 
 ::selection {
   background-color: #1fc0ff;
@@ -71,6 +71,10 @@ li a:hover {
 
 /* text */
 
+main {
+  margin: 150px;
+}
+
 .main {
   color: var(--text);
   font-size: 24px;
@@ -95,7 +99,7 @@ li a:hover {
 
 .bg {
   animation: slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient( -60deg, rgb(255, 255, 255) 50%, rgb(0, 183, 255) 50%);
+  background-image: linear-gradient(-60deg, rgb(255, 255, 255) 50%, rgb(0, 183, 255) 50%);
   bottom: 0;
   left: -50%;
   opacity: 0.5;
@@ -126,6 +130,9 @@ li a:hover {
 .home img {
   width: 20vw;
 }
+
+/* animate bg */
+
 
 /* Form */
 .contact form {
@@ -182,6 +189,7 @@ li a:hover {
   0% {
     transform: translateX(-25%);
   }
+
   100% {
     transform: translateX(25%);
   }
@@ -196,16 +204,19 @@ li a:hover {
     grid-auto-flow: row dense;
     top: 100px;
   }
+
   img {
     padding: 100px;
     width: 40vw;
   }
+
   .left {
     grid-column-start: 1;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .right {
     grid-column-start: 2;
     display: flex;
@@ -213,6 +224,8 @@ li a:hover {
     align-items: center;
   }
 }
+
+/* table styling */
 
 tr {
   padding-bottom: 10px;
@@ -225,6 +238,7 @@ td {
 
 table {
   width: 100%;
+  border-collapse: collapse;
 }
 
 th {
@@ -238,7 +252,35 @@ th {
   }
 }
 
-main {
-  margin: 150px;
+/* opdracht 1 css */
+
+.opdr1,
+.opdr2{
+  background-color: darkblue;
+  height: 100vh;
+}
+
+.wrapper {
+  padding:0 100px 0 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opdr1 table {
+  background-color: orange;
+  border-collapse: collapse;
+  font-weight: bold;
+}
+
+.opdr1 tr,
+.opdr1 td,
+.opdr1 th {
+  border: 2px solid blue;
+}
+
+.opdr1 td{
+  width: 50%;
 }
 
