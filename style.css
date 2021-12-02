@@ -277,7 +277,7 @@ th {
 }
 
 /* opdracht 2 */
-.opdr2-ol {
+.opdr2 {
   overflow: scroll;
   border: cyan 2px solid;
   color: cyan;
@@ -286,7 +286,7 @@ th {
 }
 
 /* opdracht 3 */
-.opdr3-ul {
+.opdr3 {
   color: white;
   text-shadow: 1px 1px red;
   letter-spacing: 2px;
@@ -294,7 +294,7 @@ th {
 }
 
 /* opdracht 4 */
-.opdr4-dl {
+.opdr4 {
   background-color: orange;
 }
 
