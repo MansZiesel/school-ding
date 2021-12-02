@@ -44,7 +44,7 @@ body {
   color: var(--accent);
 }
 
-li {
+.nav li {
   float: left;
 }
 
@@ -252,21 +252,13 @@ th {
   }
 }
 
-/* opdracht 1 css */
-
-.opdr1,
-.opdr2{
+/* styling opdrachten */
+.opdrachten {
   background-color: darkblue;
-  height: 100vh;
+  margin: 120px 40px 0 40px;
 }
 
-.wrapper {
-  padding:0 100px 0 100px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+/* opdracht 1 css */
 
 .opdr1 table {
   background-color: orange;
@@ -280,7 +272,48 @@ th {
   border: 2px solid blue;
 }
 
-.opdr1 td{
+.opdr1 td {
   width: 50%;
 }
 
+/* opdracht 2 */
+.opdr2-ol {
+  overflow: scroll;
+  border: cyan 2px solid;
+  color: cyan;
+  background-color: white;
+  height: 100px;
+}
+
+/* opdracht 3 */
+.opdr3-ul {
+  color: white;
+  text-shadow: 1px 1px red;
+  letter-spacing: 2px;
+  left: 35%;
+}
+
+/* opdracht 4 */
+.opdr4-dl {
+  background-color: orange;
+}
+
+.opdr4-dl>dd:nth-child(2) {
+  text-align: right;
+}
+
+.opdr4-dl>dd:nth-child(4) {
+  background-color: white;
+}
+
+.opdr4-dl>dd:nth-child(6) {
+  color: blue;
+}
+
+.opdr4-dl>dd:nth-child(8) {
+  border-style: dotted solid dotted solid;
+}
+
+.opdr4-dl>dd:nth-child(10) {
+  text-transform: uppercase;
+}
